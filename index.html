@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+  <link rel="shortcut icon" href="nongski.jpg" type="image/x-icon">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <title>NONGSKI</title>
+</head>
+<body>
+  
+  <div class="container mx-auto mt-10 px-4 font-poppins">
+    <img src="nongski.jpg" alt="logo nongski" width="100" class="mx-auto mb-4">
+    <h1 class="font-semibold text-2xl text-center mb-1">NONGSKI</h1>
+    <p class="font-light text-sm text-center text-slate-600 mb-1">Never Stop Be Kind</p>
+    <p class="text-center text-sm font-light text-slate-600 mb-5">Humanity - Social - Action - Donation</p>
+    
+    <div class="max-w-xl mx-auto rounded-xl shadow-md p-5 text-slate-100 bg-[#D38325]">
+      <h1 class="font-semibold text-lg text-center mb-3">Info Donasi</h1>
+      <div class="grid grid-cols-2 gap-2">
+        <div class="mx-auto text-sm">
+          <p>Bank Mandiri</p>
+          <p class="font-semibold mb-2">1560018919946</p>
+          <p>Bank BCA</p>
+          <p class="font-semibold mb-2">5775721208</p>
+          <p class="font-light">A/n Muhamad Fahmi</p>
+        </div>
+        <div class="mx-auto text-sm">
+          <p>Dana</p>
+          <p class="font-semibold mb-2">085892361538</p>
+          <p>OVO</p>
+          <p class="font-semibold mb-2">085892361538</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-xl mx-auto border border-slate-100 rounded-xl shadow-md p-5 mt-5 cursor-pointer hover:scale-95 hover:bg-[#D38325] hover:text-slate-100 duration-300" onclick="window.open('https://api.whatsapp.com/send?phone=6285773821645', '_blank');">
+      <h1 class="text-md text-center"><i class="bi bi-whatsapp mr-1 text-lg"></i> WhatsApp</h1>
+    </div>
+    <div class="max-w-xl mx-auto border border-slate-100 rounded-xl shadow-md p-5 mt-5 cursor-pointer hover:scale-95 hover:bg-[#D38325] hover:text-slate-100 duration-300" onclick="window.open('https://www.instagram.com/nongski_nsbk/', '_blank')">
+      <h1 class="text-md text-center"><i class="bi bi-instagram mr-1 text-lg"></i> Instagram</h1>
+    </div>
+    <div class="max-w-xl mx-auto border border-slate-100 rounded-xl shadow-md p-5 mt-5 cursor-pointer hover:scale-95 hover:bg-[#D38325] hover:text-slate-100 duration-300"  onclick="window.open('mailto:nongski.nsbk@gmail.com', '_blank')">
+      <h1 class="text-md text-center"><i class="bi bi-envelope mr-1 text-lg"></i> Email</h1>
+    </div>
+
+    <div class="my-10 text-center">
+      <p class="mb-3">Developed by</p>
+      <img src="zcode.png" alt="logo zcode" width="80" class="mx-auto cursor-pointer" onclick="window.open('https://zcode.rf.gd/', '_blank')">
+    </div>
+  
+  </div>
+
+</body>
+</html>
