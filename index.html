@@ -1,75 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-  <link rel="shortcut icon" href="nongski.png" type="image/x-icon">
-  <meta property="og:title" content="NONGSKI">
-  <meta property="og:description" content="Never Stop Be Kind">
-  <meta property="og:url" content="https://zcode25.github.io/nongski/">
-  <meta property="og:image" content="https://zcode25.github.io/nongski/nongski.png">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            poppins: ['Poppins', 'sans-serif'],
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <link rel="shortcut icon" href="nongski.png" type="image/x-icon" />
+    <meta property="og:title" content="NONGSKI" />
+    <meta property="og:description" content="Never Stop Be Kind" />
+    <meta property="og:url" content="https://zcode25.github.io/nongski/" />
+    <meta
+      property="og:image"
+      content="https://zcode25.github.io/nongski/nongski.png"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
           },
-        }
-      }
-    }
-  </script>
-  <title>NONGSKI</title>
-</head>
-<body>
-  
-  <div class="container mx-auto mt-5 px-4 font-poppins">
-    <img src="nongski.png" alt="logo nongski" width="150" class="mx-auto mb-1">
-    <h1 class="font-semibold text-2xl text-center mb-1">NONGSKI</h1>
-    <p class="font-light text-sm text-center text-slate-600 mb-1">Never Stop Be Kind</p>
-    <p class="text-center text-sm font-light text-slate-600 mb-5">Humanity - Social - Action - Donation</p>
-    
-    <div class="max-w-xl mx-auto rounded-xl shadow-md p-5 text-slate-100 bg-[#79422E]">
-      <h1 class="font-semibold text-lg text-center mb-3">Info Donasi</h1>
-      <div class="grid grid-cols-2 gap-2">
-        <div class="mx-auto text-sm">
-          <p>Bank Mandiri</p>
-          <p class="font-semibold mb-2">1560018919946</p>
-          <p>Bank BCA</p>
-          <p class="font-semibold mb-2">5775721208</p>
-          <p class="font-light">A/n Muhamad Fahmi</p>
+        },
+      };
+    </script>
+    <title>NONGSKI</title>
+  </head>
+  <body>
+    <div class="container mx-auto mt-5 px-4 font-poppins">
+      <img
+        src="nongski.png"
+        alt="logo nongski"
+        width="150"
+        class="mx-auto mb-1"
+      />
+      <h1 class="font-semibold text-2xl text-center mb-1">NONGSKI</h1>
+      <p class="font-light text-sm text-center text-slate-600 mb-1">
+        Never Stop Be Kind
+      </p>
+      <p class="text-center text-sm font-light text-slate-600 mb-5">
+        Humanity - Social - Action - Donation
+      </p>
+
+      <div
+        class="max-w-xl mx-auto rounded-xl shadow-md p-5 text-slate-100 bg-[#79422E]"
+      >
+        <h1 class="font-semibold text-lg text-center mb-3">Info Donasi</h1>
+        <div class="flex justify-center flex-wrap">
+          <div class="mx-5 my-2 flex items-center">
+            <div class="detail-bank">
+              <p>Bank Mandiri</p>
+              <input
+                type="text"
+                class="bg-transparent border-none w-[96px] focus:outline-none"
+                value="1560018919946"
+                id="mandiri"
+                readonly
+              />
+            </div>
+            <button
+              onclick="copytextfunc('mandiri')"
+              class="bg-white p-2 h-fit w-fit ml-2 rounded-sm focus:bg-[#000]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 stroke-[#79422E]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="mx-5 my-2 flex items-center">
+            <div class="detail-bank">
+              <p>Bank BCA</p>
+              <input
+                type="text"
+                class="bg-transparent border-none w-[96px] focus:outline-none"
+                value="5775721208"
+                id="bca"
+                readonly
+              />
+            </div>
+            <button
+              onclick="copytextfunc('bca')"
+              class="bg-white p-2 h-fit w-fit ml-2 rounded-sm focus:bg-[#D9D9D9]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 stroke-[#79422E]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-        <div class="mx-auto text-sm">
-          <p>Dana</p>
-          <p class="font-semibold mb-2">085892361538</p>
-          <p>OVO</p>
-          <p class="font-semibold mb-2">085892361538</p>
-        </div>
+        <p class="font-light text-center mt-2">A/n Muhamad Fahmi</p>
+      </div>
+
+      <div
+        class="max-w-xl mx-auto border border-slate-100 rounded-xl shadow-md p-5 mt-5 cursor-pointer hover:scale-95 hover:bg-[#79422E] hover:text-slate-100 duration-300"
+        onclick="window.open('https://api.whatsapp.com/send?phone=6285773821645', '_blank');"
+      >
+        <h1 class="text-md text-center">
+          <i class="bi bi-whatsapp mr-1 text-lg"></i> WhatsApp
+        </h1>
+      </div>
+      <div
+        class="max-w-xl mx-auto border border-slate-100 rounded-xl shadow-md p-5 mt-5 cursor-pointer hover:scale-95 hover:bg-[#79422E] hover:text-slate-100 duration-300"
+        onclick="window.open('https://www.instagram.com/nongski_nsbk/', '_blank')"
+      >
+        <h1 class="text-md text-center">
+          <i class="bi bi-instagram mr-1 text-lg"></i> Instagram
+        </h1>
+      </div>
+      <div
+        class="max-w-xl mx-auto border border-slate-100 rounded-xl shadow-md p-5 mt-5 cursor-pointer hover:scale-95 hover:bg-[#79422E] hover:text-slate-100 duration-300"
+        onclick="window.open('mailto:nongski.nsbk@gmail.com', '_blank')"
+      >
+        <h1 class="text-md text-center">
+          <i class="bi bi-envelope mr-1 text-lg"></i> Email
+        </h1>
+      </div>
+
+      <div class="my-10 text-center">
+        <p class="mb-3">Developed by</p>
+        <img
+          src="zcode.png"
+          alt="logo zcode"
+          width="80"
+          class="mx-auto cursor-pointer"
+          onclick="window.open('https://zcode.rf.gd/', '_blank')"
+        />
       </div>
     </div>
+    <script>
+      function copytextfunc(id) {
+        var copyText = document.getElementById(id);
 
-    <div class="max-w-xl mx-auto border border-slate-100 rounded-xl shadow-md p-5 mt-5 cursor-pointer hover:scale-95 hover:bg-[#79422E] hover:text-slate-100 duration-300" onclick="window.open('https://api.whatsapp.com/send?phone=6285773821645', '_blank');">
-      <h1 class="text-md text-center"><i class="bi bi-whatsapp mr-1 text-lg"></i> WhatsApp</h1>
-    </div>
-    <div class="max-w-xl mx-auto border border-slate-100 rounded-xl shadow-md p-5 mt-5 cursor-pointer hover:scale-95 hover:bg-[#79422E] hover:text-slate-100 duration-300" onclick="window.open('https://www.instagram.com/nongski_nsbk/', '_blank')">
-      <h1 class="text-md text-center"><i class="bi bi-instagram mr-1 text-lg"></i> Instagram</h1>
-    </div>
-    <div class="max-w-xl mx-auto border border-slate-100 rounded-xl shadow-md p-5 mt-5 cursor-pointer hover:scale-95 hover:bg-[#79422E] hover:text-slate-100 duration-300"  onclick="window.open('mailto:nongski.nsbk@gmail.com', '_blank')">
-      <h1 class="text-md text-center"><i class="bi bi-envelope mr-1 text-lg"></i> Email</h1>
-    </div>
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); // Memilih seluruh teks di input
+        document.execCommand("copy"); // Menyalin teks yang dipilih
 
-    <div class="my-10 text-center">
-      <p class="mb-3">Developed by</p>
-      <img src="zcode.png" alt="logo zcode" width="80" class="mx-auto cursor-pointer" onclick="window.open('https://zcode.rf.gd/', '_blank')">
-    </div>
-  
-  </div>
-
-</body>
+        Toastify({
+          text: "Makasih yaa",
+          duration: 3000,
+          close: true,
+          gravity: "top", // `top` or `bottom`
+          position: "right", // `left`, `center` or `right`
+          stopOnFocus: true, // Prevents dismissing of toast on hover
+          style: {
+            background: "#79422E",
+          },
+          onClick: function () {}, // Callback after click
+        }).showToast();
+      }
+    </script>
+  </body>
 </html>
